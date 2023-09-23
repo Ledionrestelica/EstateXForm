@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+body {
+  background-color: #021419;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-size: 500px;
+  flex-direction: column;
+  padding-top: 50px;
+}
+.container {
+  width: 100%;
+  margin-top: 100px;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 100px 20px 20px 20px;
+}
+.form-left,
+.form-right {
+  flex-basis: 50%;
+  min-width: 550px;
+  display: flex;
+  flex-direction: column;
+}
+.form-left {
+  gap: 30px;
+}
+.form-container {
+  display: flex;
+  width: 100%;
+  gap: 17px;
+}
+.header-title {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.header-title-1 {
+  font-size: 32px;
+  font-weight: 500;
+  letter-spacing: -0.5px;
+  color: #ffffff;
+  font-family: Instrument Sans;
+}
+.header-title-2 {
+  font-family: Inter;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #69858e;
+}
+.name,
+.email-address {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  flex-basis: 50%;
+}
+.name p,
+.email-address p {
+  font-family: Inter;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  color: #edf3f4;
+}
+.name input,
+.email-address input {
+  background-color: #050b0d;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 8px 0px 8px 12px;
+  color: #ffffff;
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+}
+.name input:focus,
+.email-address input:focus,
+.what-help input:focus {
+  border: 1px solid white;
+}
+.what-help {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.what-help p {
+  font-family: Inter;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  color: #edf3f4;
+}
+.what-help input {
+  width: 100%;
+  background-color: #050b0d;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 8px 0px 8px 12px;
+  color: #ffffff;
+  height: 40px;
+  border-radius: 6px;
+}
+.name input::placeholder,
+.email-address input::placeholder,
+.what-help input::placeholder {
+  font-family: Inter;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #69858e;
+}
+.message {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 9px;
+}
+.message p {
+  font-family: Inter;
+  font-size: 14px;
+  letter-spacing: -0.5px;
+  color: #edf3f4;
+}
+.message textarea {
+  width: 100%;
+  font-family: Inter;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background-color: #050b0d;
+  color: white;
+  padding: 8px 0px 8px 12px;
+  max-width: 100%;
+}
+.message textarea::placeholder {
+  font-family: Inter;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #69858e;
+}
+.send-message-btn {
+  width: 230px;
+  height: 40px;
+  border-radius: 6px;
+  color: #ffffff;
+  background-color: #0d4c60;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.15px;
+}
+.form-right {
+  justify-content: center;
+  align-items: center;
+  gap: 68px;
+}
+.press-inq {
+  width: 345px;
+}
+.press-title {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: #edf3f4;
+  margin-bottom: 8px;
+}
+.press-sub {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #69858e;
+  margin-bottom: 16px;
+}
+.visit-button {
+  border: 1px solid #0d4c60;
+  background-color: #021419;
+  padding: 13px 16px;
+  border-radius: 25px;
+  color: #f0f0f0;
+  cursor: pointer;
+}
+@media (max-width: 1139px) {
+  .container {
+    justify-content: center;
+  }
+  .form-right {
+    flex-direction: row;
+  }
+  .send-message-btn {
+    width: 100%;
+  }
+  .container {
+    gap: 80px;
+  }
+  .form-right {
+    flex-wrap: wrap;
+    flex-basis: 100%;
+  }
+}
+@media (max-width: 554px) {
+  .form-left,
+  .form-right {
+    flex-basis: 100%;
+    min-width: 100px;
+    padding: 10px;
+  }
+  .form-container {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .name,
+  .email-address {
+    width: 100%;
+    flex-basis: 100%;
+  }
+}
+.nav {
+  height: 50px;
+  width: 100%;
+  background-color: #4d4d4d;
+  position: absolute;
+  top: 0px;
+}
+
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(70vh - 50px);
+    overflow-y: auto;
+  }
+}
+.backhome {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.backhome a {
+  font-family: Instrument Sans;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.backhome a:visited {
+  text-decoration: none;
+  color: white;
+}
